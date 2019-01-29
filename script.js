@@ -7,18 +7,13 @@ console.log(`${x} ${y}`)
 
 //2
 
-const multiply = (x, y='1') => x * y;
+const multiply = (x, y = 1) => x * y;
 
 console.log(multiply(5))
 
 //3
 
-const average = (...numbers) => {
-  let sum = numbers.reduce(function(a, b) {
-    return a + b;
-  });
-  return sum / numbers.length;
-};
+const average = (...numbers) => numbers.reduce((previousValue, currentValue) => previousValue + currentValue) / numbers.length;
 
 console.log(average (2, 3, 4));
 
