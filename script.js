@@ -15,7 +15,7 @@ console.log(multiply(5))
 
 const average = (...numbers) => numbers.reduce((previousValue, currentValue) => previousValue + currentValue) / numbers.length;
 
-console.log(average (2, 3, 4));
+console.log(average(2, 3, 4));
 
 
 //4
